@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    name: review
+    url: jdbc:mysql://127.0.0.1:3306/review
+    username: root
+    password: 1117005
+  mvc:
+    view:
+      prefix: classpath:/templates/
+      suffix: .html
+
+  resources:
+    static-locations: classpath:/static/, classpath:/templates/
+
+
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.review.myre.entity
+
+logging:
+  file:
+    name: myre.log
+    path: /Users/wangzhihao/IdeaProjects/myre/logs
+
+
+
